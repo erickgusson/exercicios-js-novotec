@@ -1,6 +1,6 @@
-function apertou() {
+function mostrar() {
 
-    let n1 = document.getElementById("numero").value
-    document.getElementById("mensagem").innerText = "O número informado foi " + n1
+    let n1 = document.getElementById("n1").value
+    document.getElementById("resultado").innerText = n1
 
 }
