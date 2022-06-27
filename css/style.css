@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    width: 1280px;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: linear-gradient(45deg, #E94F37, #fffc31);
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+}
+
+div {
+    display: grid;
+    gap: 5px;
+}
+
+button {
+    padding: 2px 50px;
+    background-color: #5C415D;
+    color: wheat;
+}
