@@ -7,8 +7,23 @@ function converter() {
 
     let bruto = parseFloat(soma)
 
-    let total = parseFloat(bruto)
+    let irTaxa = 0.11
+    let inssTaxa =  0.08
+    let sindicatoTaxa = 0.05
 
-    document.getElementById("bruto").innerHTML = "R$ " + total
+    let ir = parseFloat(bruto) * parseFloat(irTaxa)
+    let inss = parseFloat(bruto) * parseFloat(inssTaxa)
+    let sindicato = parseFloat(bruto) * parseFloat(sindicatoTaxa)
+    
+    let total = parseFloat(bruto) - parseFloat(ir) - parseFloat(inss) - parseFloat(sindicato)
+    
+
+    document.getElementById("bruto").innerHTML = "R$ " + bruto
+    document.getElementById("IR").innerHTML = "R$ " + ir
+    document.getElementById("INSS").innerHTML = "R$ " + inss
+    document.getElementById("Sindicato").innerHTML = "R$ " + sindicato
+    
+    document.getElementById("Liquido").innerHTML = "R$ " + total
+    
 
 }
