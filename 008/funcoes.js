@@ -18,12 +18,12 @@ function converter() {
     let total = parseFloat(bruto) - parseFloat(ir) - parseFloat(inss) - parseFloat(sindicato)
     
 
-    document.getElementById("bruto").innerHTML = bruto
-    document.getElementById("IR").innerHTML = ir
-    document.getElementById("INSS").innerHTML = inss
-    document.getElementById("Sindicato").innerHTML = sindicato
+    document.getElementById("bruto").innerHTML = "R$ " + bruto
+    document.getElementById("IR").innerHTML = "R$ " + ir
+    document.getElementById("INSS").innerHTML = "R$ " + inss
+    document.getElementById("Sindicato").innerHTML = "R$ " + sindicato
     
-    document.getElementById("Liquido").innerHTML = total
+    document.getElementById("Liquido").innerHTML = "R$ " + total
     
 
 }
