@@ -6,9 +6,15 @@ function converter() {
     let soma = parseFloat(n1) * parseFloat(n2)
 
     let bruto = parseFloat(soma)
-    let ir = parseFloat(bruto) * 0.11
-    let inss = parseFloat(bruto) * 0.08
-    let sindicato = parseFloat(bruto) * 0.05
+
+    let irTaxa = 0.11
+    let inssTaxa =  0.08
+    let sindicatoTaxa = 0.05
+
+    let ir = parseFloat(bruto) * parseFloat(irTaxa)
+    let inss = parseFloat(bruto) * parseFloat(inssTaxa)
+    let sindicato = parseFloat(bruto) * parseFloat(sindicatoTaxa)
+    
     let total = parseFloat(bruto) - parseFloat(ir) - parseFloat(inss) - parseFloat(sindicato)
     
 
